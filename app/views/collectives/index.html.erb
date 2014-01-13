@@ -1,0 +1,27 @@
+<h1>Listing collectives</h1>
+
+<table>
+  <tr>
+    <th>Collective</th>
+    <th>User</th>
+    <th>Collective name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @collectives.each do |collective| %>
+  <tr>
+    <td><%= collective.collective_id %></td>
+    <td><%= collective.user_id %></td>
+    <td><%= collective.collective_name %></td>
+    <td><%= link_to 'Show', collective %></td>
+    <td><%= link_to 'Edit', edit_collective_path(collective) %></td>
+    <td><%= link_to 'Destroy', collective, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Collective', new_collective_path %>
