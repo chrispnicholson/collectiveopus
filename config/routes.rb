@@ -1,4 +1,7 @@
 Collectiveopus::Application.routes.draw do
+  resources :gifts
+
+
   resources :projects
 
 

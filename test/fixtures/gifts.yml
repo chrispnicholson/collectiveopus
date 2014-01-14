@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  gift_id: 1
+  project_id: 1
+  gift_name: MyString
+  gift_url: MyString
+
+two:
+  gift_id: 1
+  project_id: 1
+  gift_name: MyString
+  gift_url: MyString
