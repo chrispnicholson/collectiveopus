@@ -1,3 +1,21 @@
 // Place all the styles related to the Gifts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.gifts {
+	table {
+		border-collapse: collapse;
+	}
+
+	table tr td {
+		padding: 5px;
+		vertical-align: top;
+	}
+
+	.gift_line_even {
+		background: #e0f8f8;
+	}
+
+	.gift_line_odd {
+		background: #f8b0f8;
+	}
+}

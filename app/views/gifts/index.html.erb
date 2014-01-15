@@ -12,13 +12,14 @@
   </tr>
 
 <% @gifts.each do |gift| %>
-  <tr>
+  <tr class="<%= cycle('gift_line_odd', 'gift_line_even') %>">
     <td><%= gift.gift_id %></td>
     <td><%= gift.project_id %></td>
     <td><%= gift.gift_name %></td>
     <td><%= gift.gift_url %></td>
-    <td><%= link_to 'Show', gift %></td>
+    <td><%= link_to 'Info', gift %></td>
     <td><%= link_to 'Edit', edit_gift_path(gift) %></td>
+	<td><%= link_to 'Download', gift %></td>
     <td><%= link_to 'Destroy', gift, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
